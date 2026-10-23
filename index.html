@@ -547,29 +547,29 @@ nav a:not(:first-child):hover{background:var(--card)}
         <p>Los proyectos de videojuegos. Cada tarjeta te lleva al repositorio en GitHub.</p>
         <div class="dash-lines" aria-hidden="true"><div class="line"></div><div class="line"></div><div class="line"></div></div>
       </div>
-      <div class="slots" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
-        <a class="slot wide" href="https://github.com/AnDrEs1482/juegopyh" target="_blank" rel="noopener" data-foto="J1" style="grid-column: span 3; aspect-ratio: 16/9; display: grid; place-items: center; text-align: center; padding: 24px; text-decoration: none; color: inherit;">
+      <div class="slots juegos-grid" style="gap: 14px;">
+        <a class="slot wide" href="https://github.com/AnDrEs1482/juegopyh" target="_blank" rel="noopener" data-foto="J1" style="aspect-ratio: 16/9; display: grid; place-items: center; text-align: center; padding: 24px; text-decoration: none; color: inherit;">
           <div>
             <div style="font-family: var(--display); font-weight: 800; font-size: clamp(18px, 2.5cqi, 28px); margin-bottom: 8px; color: var(--hl);">juegopyh</div>
             <div style="font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .05em; text-transform: uppercase;">AnDrEs1482</div>
             <div style="margin-top: 12px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cyan);">Ver en GitHub →</div>
           </div>
         </a>
-        <a class="slot" href="https://github.com/cjosue-jpg/maze_code" target="_blank" rel="noopener" data-foto="J2" style="display: grid; place-items: center; text-align: center; padding: 24px; text-decoration: none; color: inherit;">
+        <a class="slot" href="https://github.com/cjosue-jpg/maze_code" target="_blank" rel="noopener" data-foto="J2" style="display: grid; place-items: center; text-align: center; padding: 24px; text-decoration: none; color: inherit; aspect-ratio: 1/1;">
           <div>
             <div style="font-family: var(--display); font-weight: 800; font-size: clamp(16px, 2.2cqi, 24px); margin-bottom: 8px; color: var(--hl);">maze_code</div>
             <div style="font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .05em; text-transform: uppercase;">cjosue-jpg</div>
             <div style="margin-top: 12px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cyan);">Ver en GitHub →</div>
           </div>
         </a>
-        <a class="slot" href="https://github.com/david05-Bonilla/crash-ball2" target="_blank" rel="noopener" data-foto="J3" style="display: grid; place-items: center; text-align: center; padding: 24px; text-decoration: none; color: inherit;">
+        <a class="slot" href="https://github.com/david05-Bonilla/crash-ball2" target="_blank" rel="noopener" data-foto="J3" style="display: grid; place-items: center; text-align: center; padding: 24px; text-decoration: none; color: inherit; aspect-ratio: 1/1;">
           <div>
             <div style="font-family: var(--display); font-weight: 800; font-size: clamp(16px, 2.2cqi, 24px); margin-bottom: 8px; color: var(--hl);">crash-ball2</div>
             <div style="font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .05em; text-transform: uppercase;">david05-Bonilla</div>
             <div style="margin-top: 12px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cyan);">Ver en GitHub →</div>
           </div>
         </a>
-        <a class="slot" href="https://github.com/craik07/Specter-Striker" target="_blank" rel="noopener" data-foto="J4" style="display: grid; place-items: center; text-align: center; padding: 24px; text-decoration: none; color: inherit;">
+        <a class="slot" href="https://github.com/craik07/Specter-Striker" target="_blank" rel="noopener" data-foto="J4" style="display: grid; place-items: center; text-align: center; padding: 24px; text-decoration: none; color: inherit; aspect-ratio: 1/1;">
           <div>
             <div style="font-family: var(--display); font-weight: 800; font-size: clamp(16px, 2.2cqi, 24px); margin-bottom: 8px; color: var(--hl);">Specter-Striker</div>
             <div style="font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .05em; text-transform: uppercase;">craik07</div>
@@ -577,6 +577,12 @@ nav a:not(:first-child):hover{background:var(--card)}
           </div>
         </a>
       </div>
+      <style>
+        .juegos-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+        .juegos-grid .wide { grid-column: span 3; }
+        @media (max-width: 980px) { .juegos-grid { grid-template-columns: repeat(2, 1fr); } .juegos-grid .wide { grid-column: span 2; } }
+        @media (max-width: 620px) { .juegos-grid { grid-template-columns: 1fr; } .juegos-grid .wide { grid-column: span 1; } }
+      </style>
     </article>
 
     <!-- Hackathon -->
@@ -672,10 +678,7 @@ nav a:not(:first-child):hover{background:var(--card)}
       <h2 class="big">Gracias</h2>
       <div class="row">
         <p>Hasta pronto, teacher Sergio. Donde vaya, lleva un pedacito de nuestro código.</p>
-        <div class="sign" aria-label="Espacio para firmas">
-          <div>Firma</div><div>Firma</div><div>Firma</div>
-        </div>
-      </div>
+        <p>Hecho por Andres y por todos los que los queremos. <a href="
       <div class="legal"><span>Gracias, teacher</span><span>Con cariño, tus estudiantes</span></div>
     </div>
   </footer>
